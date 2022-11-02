@@ -17,9 +17,9 @@ def get_citations_needed_count(url):
     '''
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
-    citation=soup.find_all("sup",class_='noprint')
-    print(len(citation))
-get_citations_needed_count(URL)
+    citation=soup.find_all(class_='noprint')
+    return len(citation)
+print(get_citations_needed_count(URL))
 
 def get_citations_needed_report(url):
     '''
@@ -27,8 +27,9 @@ def get_citations_needed_report(url):
     '''
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
-    All=soup.find_all(class_="noprint")
+    pragraphs=soup.find_all('p')
 
-    for p in All:
+    for p in pragraphs:
         print(p.parent.text)
+
 get_citations_needed_report(URL)
