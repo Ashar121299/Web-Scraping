@@ -7,7 +7,9 @@
 ### Link and Resources 
 
 [gitignore](https://www.toptal.com/developers/gitignore)
+
 [Stack overflow](https://stackoverflow.com/questions/11783875/importerror-no-module-named-bs4-beautifulsoup)
+
 [Stack overflow](https://stackoverflow.com/questions/17309288/importerror-no-module-named-requests)
 
 
